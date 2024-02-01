@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "terraform-state-cloudwave-uvely2"
+    bucket = "terraform-state-cloudwave-haeun"
     key = "stage/data-stores/mysql/terraform.tfstate"
     region = "ap-northeast-2"
     dynamodb_table = "terraform-locks"

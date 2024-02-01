@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "terraform-state" {
-  bucket = "terraform-state-cloudwave-uvely2"
+  bucket = "terraform-state-cloudwave-haeun"
 
   lifecycle {
     prevent_destroy = true
@@ -46,7 +46,7 @@ resource "aws_dynamodb_table" "terraform_locks" {
 
 terraform {
   backend "s3" {
-    bucket = "terraform-state-cloudwave-uvely2"
+    bucket = "terraform-state-cloudwave-haeun"
     key = "global/s3/terraform.tfstate"
     region = "ap-northeast-2"
     dynamodb_table = "terraform-locks"

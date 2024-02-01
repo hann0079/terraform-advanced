@@ -18,7 +18,7 @@ data "aws_subnets" "default" {
 data "terraform_remote_state" "db" {
   backend = "s3"
   config = {
-    bucket = "terraform-state-cloudwave-uvely2"
+    bucket = "terraform-state-cloudwave-haeun"
     key = "stage/data-stores/mysql/terraform.tfstate"
     region = "ap-northeast-2"
   }
